@@ -39,6 +39,8 @@ if [ $? -gt 0 ]; then
         echo "Erro ao alterar o arquivo mysqls.cnf!"; exit 0
 fi
 
+sudo systemctl restart mysql
+
 echo "------------------------------Instalação concluída com sucesso!------------------------------"
 echo "----------------------Script by: Eliezer Ribeiro | linkedin.com/in/elinux--------------------"
 exit 0
